@@ -1,0 +1,8 @@
+{
+  "name": "bahasonek",
+  "private": true,
+  "description": "Bahar Sonek – Creative Dienstleistungen web sitesi (TR/DE)",
+  "dependencies": {
+    "nodemailer": "^6.9.16"
+  }
+}

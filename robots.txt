@@ -1,0 +1,4 @@
+# Önizleme aşaması: arama motorlarına kapalı.
+# Hostinger'da canlıya alırken bu dosyayı "User-agent: *\nAllow: /" olarak değiştirin.
+User-agent: *
+Disallow: /
