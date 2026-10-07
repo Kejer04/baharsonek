@@ -37,6 +37,14 @@ I = {  # ikonlar (stroke)
 def ic(n): return f'<span class="ico"><svg viewBox="0 0 24 24">{I[n]}</svg></span>'
 def svg(n, extra=''): return f'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" {extra}>{I[n]}</svg>'
 
+# Fütüristik portre: arka katman panelin içinde kırpılır, ön katman yalnızca baş kısmını çerçevenin üstüne taşır.
+FX_PORTRAIT = '''<div class="fx-stage">
+      <span class="fx-halo"></span><span class="fx-orbit"></span>
+      <div class="fx-panel"><img class="fx-back" src="img/bahar-cutout.webp" alt="Bahar Sonek" width="809" height="1150"></div>
+      <img class="fx-front" src="img/bahar-cutout.webp" alt="" aria-hidden="true" width="809" height="1150">
+      <span class="fx-hud tl"></span><span class="fx-hud tr"></span><span class="fx-hud bl"></span><span class="fx-hud br"></span>
+    </div>'''
+
 WA_SVG = '<svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.8-1.1-4.6-4-4.8-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.3 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l2 .9c.3.2.5.2.5.4.1.1.1.7-.1 1.2z"/></svg>'
 FB_SVG = '<svg viewBox="0 0 24 24"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v2H7v4h3v8h4v-8h3l1-4h-4V8z"/></svg>'
 IG_SVG = '<svg viewBox="0 0 24 24"><path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zM17.3 5.4a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4zM16.5 2h-9A5.5 5.5 0 0 0 2 7.5v9A5.5 5.5 0 0 0 7.5 22h9a5.5 5.5 0 0 0 5.5-5.5v-9A5.5 5.5 0 0 0 16.5 2zm3.7 14.5a3.7 3.7 0 0 1-3.7 3.7h-9a3.7 3.7 0 0 1-3.7-3.7v-9a3.7 3.7 0 0 1 3.7-3.7h9a3.7 3.7 0 0 1 3.7 3.7z"/></svg>'
@@ -248,8 +256,8 @@ def dgk_role_hero():
     <div class="role-facts">{fl}</div>
     <div class="crumbs" style="text-align:left">{crumb}</div>
   </div>
-  <div class="role-portrait reveal">
-    <div class="frame"><img src="img/portrait-1.jpg" alt="Bahar Sonek"></div>
+  <div class="role-portrait fx-portrait reveal">
+    {FX_PORTRAIT}
     <img class="role-logo" src="img/dgk-logo.png" alt="Dünya Gençlik Konseyi">
   </div>
 </div></section>'''
@@ -297,8 +305,8 @@ page('index.html','Bahar Sonek – Doğru Destek, Güçlü Yarınlar | Gelsenkir
       <div><b>D.G.K.</b>Almanya Bölge Başkanı</div>
     </div>
   </div>
-  <div class="portrait reveal">
-    <div class="frame"><img src="img/portrait-1.jpg" alt="Bahar Sonek"></div>
+  <div class="portrait fx-portrait reveal">
+    {FX_PORTRAIT}
     <div class="float-card fc-1"><span class="ic"><svg viewBox="0 0 24 24">{I['trophy']}</svg></span><span><b>Yılın En Başarılı İş Kadını</b>Avrupa'nın Yıldızları</span></div>
     <a href="dgk.html" class="float-card fc-2"><img src="img/dgk-logo.png" alt="" style="width:40px;height:40px"><span><b>Dünya Gençlik Konseyi</b>Almanya Bölge Başkanı</span></a>
   </div>
