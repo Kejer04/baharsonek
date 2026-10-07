@@ -28,8 +28,8 @@ page('index.html','Bahar Sonek – Richtige Unterstützung, starke Zukunft | Gel
       <div><b>D.G.K.</b>Regionalpräsidentin Deutschland</div>
     </div>
   </div>
-  <div class="portrait reveal">
-    <div class="frame"><img src="img/portrait-1.jpg" alt="Bahar Sonek"></div>
+  <div class="portrait fx-portrait reveal">
+    {FX_PORTRAIT}
     <div class="float-card fc-1"><span class="ic"><svg viewBox="0 0 24 24">{I['trophy']}</svg></span><span><b>Geschäftsfrau des Jahres</b>„Avrupa'nın Yıldızları“</span></div>
     <a href="dgk.html" class="float-card fc-2"><img src="img/dgk-logo.png" alt="" style="width:40px;height:40px"><span><b>Weltjugendrat (D.G.K.)</b>Regionalpräsidentin Deutschland</span></a>
   </div>
