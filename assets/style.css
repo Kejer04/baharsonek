@@ -88,6 +88,12 @@ header.site{position:sticky;top:0;z-index:50;background:rgba(12,10,7,.9);backdro
 .fx-portrait{width:100%;padding-top:calc(var(--fx-pop) + 12px);--fx-pop:24%;--fx-ar:582/855;--fx-cut:30%;--fx-fade:35%;--fx-x:66%}
 .fx-about{max-width:400px;margin:0 auto;--fx-pop:26%;--fx-ar:360/515;--fx-cut:20%;--fx-fade:24%;--fx-x:51%}
 @media(max-width:900px){.fx-about{max-width:320px}}
+/* ana sayfa "kimdir" bölümü: portre metin sütununun yüksekliğine sığar (baş başlığın hizasında, çerçeve butonun altında biter) */
+@media(min-width:901px){
+  .fx-fit{position:relative;align-self:stretch;min-height:320px}
+  .fx-fit .fx-portrait{position:absolute;top:0;bottom:11px;left:50%;transform:translateX(-50%);width:auto;max-width:none;margin:0;padding-top:0;aspect-ratio:360/610}
+  .fx-fit .fx-stage{position:absolute;left:0;right:0;bottom:0}
+}
 .fx-stage{position:relative;aspect-ratio:var(--fx-ar);--arch:50% 50% 22px 22px/22% 22% 22px 22px}
 .fx-panel{position:absolute;inset:0;z-index:1;border-radius:var(--arch);overflow:hidden;isolation:isolate;
   background:radial-gradient(ellipse 70% 45% at var(--fx-x) 18%,rgba(240,209,138,.22),transparent 70%),linear-gradient(180deg,#211a11 0%,#15110b 55%,#0e0c08 100%);
