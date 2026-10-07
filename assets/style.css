@@ -85,22 +85,25 @@ header.site{position:sticky;top:0;z-index:50;background:rgba(12,10,7,.9);backdro
 .float-card .ic svg{width:20px;height:20px;stroke:var(--gold2);fill:none;stroke-width:1.6}
 .fc-1{left:-56px;top:46%}.fc-2{right:-28px;bottom:28px}
 /* kemerli portre – görsel 582×995; kemer görselin alt 855 pikselini kapsar, baş üst kenardan taşar */
-.fx-portrait{width:100%;padding-top:calc(24% + 12px)}
-.fx-stage{position:relative;aspect-ratio:582/855;--arch:50% 50% 22px 22px/22% 22% 22px 22px}
+.fx-portrait{width:100%;padding-top:calc(var(--fx-pop) + 12px);--fx-pop:24%;--fx-ar:582/855;--fx-cut:30%;--fx-fade:35%;--fx-x:66%}
+.fx-about{max-width:400px;margin:0 auto;--fx-pop:26%;--fx-ar:360/515;--fx-cut:20%;--fx-fade:24%;--fx-x:51%}
+@media(max-width:900px){.fx-about{max-width:320px}}
+.fx-stage{position:relative;aspect-ratio:var(--fx-ar);--arch:50% 50% 22px 22px/22% 22% 22px 22px}
 .fx-panel{position:absolute;inset:0;z-index:1;border-radius:var(--arch);overflow:hidden;isolation:isolate;
-  background:radial-gradient(ellipse 70% 45% at 66% 18%,rgba(240,209,138,.22),transparent 70%),linear-gradient(180deg,#211a11 0%,#15110b 55%,#0e0c08 100%);
+  background:radial-gradient(ellipse 70% 45% at var(--fx-x) 18%,rgba(240,209,138,.22),transparent 70%),linear-gradient(180deg,#211a11 0%,#15110b 55%,#0e0c08 100%);
   box-shadow:0 40px 80px -40px rgba(212,169,74,.35)}
 .fx-panel::after{content:"";position:absolute;inset:auto 0 0;height:22%;z-index:2;pointer-events:none;background:linear-gradient(180deg,transparent,rgba(12,10,7,.85))}
 .fx-portrait img.fx-back,.fx-portrait img.fx-front{position:absolute;left:0;bottom:0;width:100%;height:auto;max-width:none}
 .fx-back{z-index:1}
+.fx-about .fx-panel{background:radial-gradient(ellipse 75% 60% at 50% 40%,rgba(240,209,138,.34),rgba(212,169,74,.10) 55%,transparent 80%),linear-gradient(180deg,#2a2114 0%,#1a140d 60%,#0e0c08 100%)}
 .fx-front{z-index:3;pointer-events:none;
-  -webkit-mask-image:linear-gradient(180deg,#000 30%,transparent 35%),linear-gradient(270deg,transparent 0,#000 5%);
+  -webkit-mask-image:linear-gradient(180deg,#000 var(--fx-cut),transparent var(--fx-fade)),linear-gradient(270deg,transparent 0,#000 5%);
   -webkit-mask-composite:source-in;
-  mask-image:linear-gradient(180deg,#000 30%,transparent 35%),linear-gradient(270deg,transparent 0,#000 5%);
+  mask-image:linear-gradient(180deg,#000 var(--fx-cut),transparent var(--fx-fade)),linear-gradient(270deg,transparent 0,#000 5%);
   mask-composite:intersect}
 .fx-stage::before{content:"";position:absolute;inset:0;z-index:2;border-radius:var(--arch);border:1px solid var(--gold);pointer-events:none}
 .fx-stage::after{content:"";position:absolute;inset:-11px;z-index:0;border-radius:50% 50% 32px 32px/23% 23% 32px 32px;border:1px solid rgba(212,169,74,.4);pointer-events:none}
-.fx-halo{position:absolute;z-index:0;left:66%;top:0;width:90%;aspect-ratio:1;transform:translate(-50%,-50%);border-radius:50%;pointer-events:none;
+.fx-halo{position:absolute;z-index:0;left:var(--fx-x);top:0;width:90%;aspect-ratio:1;transform:translate(-50%,-50%);border-radius:50%;pointer-events:none;
   background:radial-gradient(circle,rgba(240,209,138,.20) 0,rgba(212,169,74,.07) 45%,transparent 68%)}
 @media(max-width:900px){.hero-grid{grid-template-columns:1fr}.portrait{margin:0 auto;max-width:360px}.fc-1{left:-6px;top:auto;bottom:118px}.fc-2{right:-6px}}
 @media(max-width:520px){.hero-stats{grid-template-columns:1fr 1fr}.hero-stats div:last-child{grid-column:span 2}}
