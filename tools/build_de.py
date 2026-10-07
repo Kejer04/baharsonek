@@ -178,7 +178,7 @@ page('ueber-uns.html','Über uns – Wer ist Bahar Sonek?',
 {hero('Über uns','Wer ist <span class="script gold" style="font-size:1.2em">Bahar Sonek?</span>','Ein Weg von einer eher zurückhaltenden jungen Frau zu einer offenen, starken und inspirierenden Unternehmerin.','Über uns')}
 
 <section><div class="wrap split">
-  <div class="photo gold-frame reveal"><img src="img/portrait-1.jpg" alt="Bahar Sonek" style="aspect-ratio:4/5"></div>
+  <div class="fx-portrait fx-about reveal">{fx_portrait('img/bahar-hakkimizda.webp',360,610)}</div>
   <div class="reveal">
     <span class="eyebrow">Unsere Geschichte</span>
     <h2>Der Gesellschaft nützen, <span class="gold">Menschen den Weg zeigen</span></h2>
