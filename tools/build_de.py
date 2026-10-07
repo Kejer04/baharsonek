@@ -78,7 +78,7 @@ page('index.html','Bahar Sonek – Richtige Unterstützung, starke Zukunft | Gel
 </div></section>
 
 <section class="band"><div class="wrap split rev">
-  <div class="photo reveal"><img src="img/photographer.jpg" alt="Fotoshooting" style="aspect-ratio:4/5"></div>
+  <div class="photo reveal"><img src="img/studio.jpg" alt="Fotoshooting" style="aspect-ratio:4/5"></div>
   <div class="reveal">
     <span class="eyebrow">Kreative Dienstleistungen</span>
     <h2>Die schönsten Momente <span class="gold">Ihrer besonderen Tage</span></h2>
@@ -295,7 +295,7 @@ page('fotografie.html','Fotografie & Organisation – Bahar Sonek Creative',
 {hero('Creative Dienstleistungen','Ihre besonderen Tage, <span class="gold">für immer festgehalten</span>','Mit eleganten, natürlichen und unvergesslichen Fotos halten wir die schönsten Momente für Sie fest.','Fotografie')}
 
 <section><div class="wrap split">
-  <div class="photo reveal"><img src="img/photographer.jpg" alt="Professionelles Fotoshooting" style="aspect-ratio:4/5"></div>
+  <div class="photo reveal"><img src="img/studio.jpg" alt="Professionelles Fotoshooting" style="aspect-ratio:4/5"></div>
   <div class="reveal">
     <span class="eyebrow">Bahar Sonek Creative</span>
     <h2>Ihre Erinnerungen <span class="gold">in guten Händen</span></h2>
