@@ -326,7 +326,7 @@ page('index.html','Bahar Sonek – Doğru Destek, Güçlü Yarınlar | Gelsenkir
 </div></section>
 
 <section><div class="wrap split">
-  <div class="photo gold-frame reveal"><img src="img/tv-3.jpg" alt="Bahar Sonek portre" style="aspect-ratio:4/5"></div>
+  <div class="fx-portrait fx-about reveal">{fx_portrait('img/bahar-hakkimizda.webp',360,610)}</div>
   <div class="reveal">
     <span class="eyebrow">Bahar Sonek Kimdir?</span>
     <h2>Adana'dan Gelsenkirchen'e, <span class="gold">ilham veren bir yolculuk</span></h2>
