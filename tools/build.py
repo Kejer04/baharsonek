@@ -356,7 +356,7 @@ page('index.html','Bahar Sonek – Doğru Destek, Güçlü Yarınlar | Gelsenkir
 </div></section>
 
 <section class="band"><div class="wrap split rev">
-  <div class="photo reveal"><img src="img/photographer.jpg" alt="Fotoğraf çekimi" style="aspect-ratio:4/5"></div>
+  <div class="photo reveal"><img src="img/studio.jpg" alt="Fotoğraf çekimi" style="aspect-ratio:4/5"></div>
   <div class="reveal">
     <span class="eyebrow">Kreatif Hizmetler</span>
     <h2>Özel günlerinizin <span class="gold">en güzel anları</span></h2>
@@ -577,7 +577,7 @@ page('fotografcilik.html','Fotoğrafçılık & Organizasyon – Bahar Sonek Crea
 {hero('Creative Dienstleistungen','Özel günleriniz, <span class="gold">ölümsüz kareler</span>','Zarif, doğal ve unutulmaz fotoğraflarla o günün en güzel anlarını sizin için yakalıyoruz.','Fotoğrafçılık')}
 
 <section><div class="wrap split">
-  <div class="photo reveal"><img src="img/photographer.jpg" alt="Profesyonel fotoğraf çekimi" style="aspect-ratio:4/5"></div>
+  <div class="photo reveal"><img src="img/studio.jpg" alt="Profesyonel fotoğraf çekimi" style="aspect-ratio:4/5"></div>
   <div class="reveal">
     <span class="eyebrow">Bahar Sonek Creative</span>
     <h2>Anılarınız <span class="gold">emin ellerde</span></h2>
