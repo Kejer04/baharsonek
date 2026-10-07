@@ -37,12 +37,11 @@ I = {  # ikonlar (stroke)
 def ic(n): return f'<span class="ico"><svg viewBox="0 0 24 24">{I[n]}</svg></span>'
 def svg(n, extra=''): return f'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" {extra}>{I[n]}</svg>'
 
-# Fütüristik portre: arka katman panelin içinde kırpılır, ön katman yalnızca baş kısmını çerçevenin üstüne taşır.
+# Kemerli portre: arka katman kemerin içinde kırpılır, ön katman yalnızca baş kısmını çerçevenin önüne taşır.
 FX_PORTRAIT = '''<div class="fx-stage">
-      <span class="fx-halo"></span><span class="fx-orbit"></span>
-      <div class="fx-panel"><img class="fx-back" src="img/bahar-cutout.webp" alt="Bahar Sonek" width="809" height="1150"></div>
-      <img class="fx-front" src="img/bahar-cutout.webp" alt="" aria-hidden="true" width="809" height="1150">
-      <span class="fx-hud tl"></span><span class="fx-hud tr"></span><span class="fx-hud bl"></span><span class="fx-hud br"></span>
+      <span class="fx-halo"></span>
+      <div class="fx-panel"><img class="fx-back" src="img/bahar-cutout.webp" alt="Bahar Sonek" width="582" height="995"></div>
+      <img class="fx-front" src="img/bahar-cutout.webp" alt="" aria-hidden="true" width="582" height="995">
     </div>'''
 
 WA_SVG = '<svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.8-1.1-4.6-4-4.8-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.3 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l2 .9c.3.2.5.2.5.4.1.1.1.7-.1 1.2z"/></svg>'
