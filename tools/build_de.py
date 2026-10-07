@@ -48,7 +48,7 @@ page('index.html','Bahar Sonek – Richtige Unterstützung, starke Zukunft | Gel
 </div></section>
 
 <section><div class="wrap split">
-  <div class="fx-portrait fx-about reveal">{fx_portrait('img/bahar-hakkimizda.webp',360,610)}</div>
+  <div class="fx-fit reveal"><div class="fx-portrait fx-about">{fx_portrait('img/bahar-hakkimizda.webp',360,610)}</div></div>
   <div class="reveal">
     <span class="eyebrow">Wer ist Bahar Sonek?</span>
     <h2>Von Adana nach Gelsenkirchen – <span class="gold">ein inspirierender Weg</span></h2>
